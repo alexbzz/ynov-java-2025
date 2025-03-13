@@ -5,18 +5,19 @@ import java.util.Scanner;
 public class ScanMe {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Entrez votre nom : ");
+        System.out.print("Entrée vôtre nom : ");
         String nom = scanner.nextLine();
-        System.out.print("Entrez votre âge : ");
+        System.out.print("Entrée vôtre âge : ");
         int age = scanner.nextInt();
         System.out.println("Nom : " + nom);
-        System.out.println("Âge : " + age);
+        System.out.println("Age : " + age);
+        EvenOrOdd.main(args);
     }
-
     public static class EvenOrOdd {
         public static void main(String[] args) {
+
             Scanner scanner = new Scanner(System.in);
-            System.out.print("Entrez un nombre : ");
+            System.out.print("Entrée un nombre : ");
             int nombre = scanner.nextInt();
             if (nombre % 2 == 0) {
                 System.out.println("Le nombre " + nombre + " est pair.");
